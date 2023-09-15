@@ -67,8 +67,31 @@ class MyComponent extends React.Component {
                 <h1>Hello React!</h1>
             </div>
         );
-  
-  
       // Cambia el código encima de esta línea
+    }
+};
+
+// Crear un componente con composición
+const ChildComponent = () => {
+    return (
+      <div>
+        <p>I am the child</p>
+      </div>
+    );
+  };
+  
+  class ParentComponent extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      return (
+        <div>
+          <h1>I am the parent</h1>
+          { /* Cambia el código debajo de esta línea */ }
+            <ChildComponent />
+          { /* Cambia el código encima de esta línea */ }
+        </div>
+      );
     }
 };
