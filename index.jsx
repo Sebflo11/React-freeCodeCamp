@@ -26,3 +26,49 @@ const JSX = (
     </div>
 );
 // Agrega tu código debajo de esta línea
+ReactDOM.render(JSX, document.getElementById('challenge-node'));
+
+// Define una clase HTML en JSX
+const JSX = (
+    <div className='myDiv'>
+      <h1>Add a class to this div</h1>
+    </div>
+);
+
+// Aprende sobre las etiquetas JSX auto-cerradas
+const JSX = (
+    <div>
+      <h2>Welcome to React!</h2> <br />
+      <p>Be sure to close all tags!</p>
+      <hr />
+    </div>
+);
+
+// Crea un componente funcional sin estado
+const MyComponent = function() {
+    // Cambia el código debajo de esta línea
+    return (
+      <div>Hello</div>
+    );
+  
+  
+    // Cambia el código encima de esta línea
+}
+
+// Crea un componente de React
+class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      // Cambia el código debajo de esta línea
+        return (
+            <div>
+                <h1>Hello React!</h1>
+            </div>
+        );
+  
+  
+      // Cambia el código encima de esta línea
+    }
+};
